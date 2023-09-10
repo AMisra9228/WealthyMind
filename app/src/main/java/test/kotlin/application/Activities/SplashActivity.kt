@@ -18,6 +18,7 @@ class SplashActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
+        //for auto transition
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
